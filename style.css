@@ -1,0 +1,22 @@
+body{
+background-color: black;
+
+}
+h1{
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seções{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.seções2{
+    justify-content:center;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
