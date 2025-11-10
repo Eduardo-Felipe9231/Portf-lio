@@ -8,6 +8,12 @@ h1{
     align-items: center;
     justify-content: center;
 }
+h2{
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .seções{
     justify-content: center;
     display: flex;
