@@ -18,7 +18,7 @@ body{
     text-align: center;
     background: linear-gradient(135deg, #1a0000, #400000, #1a0000);
     background-size: 200% 200%;
-    animation: gradientMove 8s ease infinite;
+    animation: gradientMove 6s ease infinite;
 }
 .hero h1{
     font-size: 3rem;
@@ -31,7 +31,7 @@ body{
     color: #dcdcdc;
 }
 .hero .btn{
-    background-color: #9b6bff;
+    background-color: #ff3b3b;
     color: white;
     text-decoration: none;
     padding: 12px 25px;
@@ -50,4 +50,112 @@ body{
     0%{ background-position: 0% 50%;}
     50%{ background-position: 100% 50%;}
     100%{ background-position: 0% 50%;}
+}
+.sobre{
+    padding: 80px 20px;
+    background-color: #121212;
+     border-top: 1px solid rgba(255, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.15);
+}
+.sobre .container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.foto-perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff3b3b;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+.texto-sobre h2{
+    color: #ff3b3b;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.texto-sobre p{
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+.info-sobre{
+    margin-top: 20px;
+    background:rgba(255, 255, 255, 0.3);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 3px solid #ff3b3b;
+}
+.info-sobre div{
+    margin-bottom: 8px;
+    color: #bbb;
+    font-size: 0.95rem;
+}
+.info-sobre strong{
+    color: #ff4c4c
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.curriculo{
+    padding: 90px 20px;
+    background-color: #0e0e0e;
+    border-top: 1px solid rgba(255, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.15);
+}
+.curriculo .container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.curriculo h2{
+    text-align: center;
+    color: #ff3b3b;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.bloco{
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 20px 25px;
+    border-radius: 10px;
+    border-left: 3px solid #ff3b3b;
+    transition: 0.3s;
+}
+.bloco:hover{
+    background: rgba(255, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+.bloco h3{
+    color: #ff4c4c;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.bloco p,
+.bloco li{
+    color: #ccc;
+    font-size: 1rem;
+    padding-left: 0;
+}
+.bloco ul{
+    list-style: none;
+    padding-left: 0;
+}
+.bloco li::before{
+    content: "▸ ";
+    color: #ff3b3b;
 }

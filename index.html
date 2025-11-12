@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,90 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="hero">
         <h1>Eduardo Felipe</h1>
         <p>Criando, Aprendendo e evoluindo a cada projeto.</p>
         <a href="#sobre" class="btn">Ver Mais</a>
     </header>
-    <main></main>
+    <main>
+        <section id="sobre" class="sobre reveal">
+            <div class="container">
+                <img src="https://via.placeholder.com/200" alt="Foto de Eduardo Felipe" class="foto-perfil">
+                <div class="texto-sobre">
+                    <h2>Sobre mim</h2>
+                    <p>Sou um estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> na Fatec São José dos
+                        Campos.</p>
+                    <p>Apaixonado por Tecnologia e Inovação, busco sempre transformar ideias em soluções reais em
+                        soluções reais. Gosto de aprender ferramentas novas e explorar maneiras criativas de resolver
+                        problemas.</p>
+                    <p>No meu tempo livre, gosto de Jogar, Ouvir música ou ler livros</p>
+                    <div class="info-sobre">
+                        <div><strong>📍 Localização:</strong> São José dos Campos, SP</div>
+                        <div><strong>🎓 Curso:</strong> ADS – FATEC</div>
+                        <div><strong>🚀 Objetivo:</strong> Estágio ou oportunidade em Desenvolvimento Web</div>
+
+                    </div>
+                </div>
+            </div>
+            <section id="curriculo" class="curriculo reveal">
+                <div class="container">
+                    <h2>Currículo</h2>
+                    <div class="bloco">
+                        <h3>🎓 Formação Acadêmica</h3>
+                        <p>
+                            Cursando <strong>Análise e Desenvolvimento de Sistemas</strong> — FATEC São José dos Campos
+                            (2025–2028)
+                        </p>
+                        <div class="bloco">
+                            <h3>📜 Certificações</h3>
+                            <ul>
+                                <li>Curso de Excel - Fundação Bradesco</li>
+                                <li>Introdução ao Git e GitHub — Cursa</li>
+                            </ul>
+                        </div>
+                        <div class="bloco">
+                            <h3>💻 Competências Técnicas</h3>
+                            <ul>
+                                <li><strong>Linguagens:</strong> Python,, HTML, CSS</li>
+                                <li><strong>Frameworks:</strong> Flask</li>
+                                <li><strong>Ferramentas:</strong> Git, PostgreSQL, AWS</li>
+                            </ul>
+                        </div>
+                        <div class="bloco">
+                            <h3>🧠 Soft Skills</h3>
+                            <ul>
+                                <li>Trabalho em equipe</li>
+                                <li>Comunicação</li>
+                                <li>Organização</li>
+                                <li>Aprendizado contínuo</li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+            </div>
+            </div>
+        </section>
+        <script>
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        </script>
+        </section>
+
+    </main>
     <footer>
         <p>Feito por Eduardo Felipe</p>
     </footer>
 </body>
+
 </html>
