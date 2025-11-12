@@ -38,60 +38,99 @@
             <section id="curriculo" class="curriculo reveal">
                 <div class="container">
                     <h2>Currículo</h2>
+
                     <div class="bloco">
                         <h3>🎓 Formação Acadêmica</h3>
                         <p>
                             Cursando <strong>Análise e Desenvolvimento de Sistemas</strong> — FATEC São José dos Campos
                             (2025–2028)
                         </p>
-                        <div class="bloco">
-                            <h3>📜 Certificações</h3>
-                            <ul>
-                                <li>Curso de Excel - Fundação Bradesco</li>
-                                <li>Introdução ao Git e GitHub — Cursa</li>
-                            </ul>
-                        </div>
-                        <div class="bloco">
-                            <h3>💻 Competências Técnicas</h3>
-                            <ul>
-                                <li><strong>Linguagens:</strong> Python,, HTML, CSS</li>
-                                <li><strong>Frameworks:</strong> Flask</li>
-                                <li><strong>Ferramentas:</strong> Git, PostgreSQL, AWS</li>
-                            </ul>
-                        </div>
-                        <div class="bloco">
-                            <h3>🧠 Soft Skills</h3>
-                            <ul>
-                                <li>Trabalho em equipe</li>
-                                <li>Comunicação</li>
-                                <li>Organização</li>
-                                <li>Aprendizado contínuo</li>
-                            </ul>
-                        </div>
                     </div>
+
+                    <div class="bloco">
+                        <h3>📜 Certificações</h3>
+                        <ul>
+                            <li>Curso de Excel - Fundação Bradesco</li>
+                            <li>Introdução ao Git e GitHub — Cursa</li>
+                        </ul>
+                    </div>
+
+                    <div class="bloco">
+                        <h3>💻 Competências Técnicas</h3>
+                        <ul>
+                            <li><strong>Linguagens:</strong> Python, HTML, CSS</li>
+                            <li><strong>Frameworks:</strong> Flask</li>
+                            <li><strong>Ferramentas:</strong> Git, PostgreSQL, AWS</li>
+                        </ul>
+                    </div>
+
+                    <div class="bloco">
+                        <h3>🧠 Soft Skills</h3>
+                        <ul>
+                            <li>Trabalho em equipe</li>
+                            <li>Comunicação</li>
+                            <li>Organização</li>
+                            <li>Aprendizado contínuo</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
-            </div>
-            </div>
-        </section>
-        <script>
 
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
+            <section id="projetos" class="projetos reveal">
+                <div class="container">
+                    <h2>Projetos</h2>
 
-            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-        </script>
-        </section>
+                    <div class="grid-projetos">
 
-    </main>
-    <footer>
-        <p>Feito por Eduardo Felipe</p>
-    </footer>
-</body>
+                        <div class="projeto-card">
+                            <h3>Curso de Modelo Scrum</h3>
+                            <p class="descricao">
+                                Site completo para aprendizado da Metodologia Ágil: Scrum.
+                            </p>
+                            <p><strong>Tecnologias:</strong> Python, HTML, CSS, PostgreSQL</p>
+                            <p><strong>Desafio:</strong> Ensinar a Metodologia Scrum.</p>
+                            <p><strong>Solução:</strong> Usei as tecnologias já citadas para desenvolver um site
+                                completo.</p>
+                            <a href="#" class="btn-projeto">🔗 Ver no GitHub</a>
+                        </div>
 
-</html>
+                        <section id="trabalhos" class="trabalhos reveal">
+                            <div class="container">
+                                <h2>Trabalhos Acadêmicos</h2>
+
+                                <div class="grid-trabalhos">
+
+                                    <div class="trabalho-card">
+                                        <h3>API – Curso de Modelo Scrum</h3>
+                                        <p class="descricao">
+                                            Projeto desenvolvido como Trabalho de Conclusão de Curso, com o objetivo de
+                                            ensinar a Metodologia ágil Scrum
+                                        </p>
+                                        <p><strong>Tecnologias:</strong> Python, Flask, PostgreSQL, HTML, CSS</p>
+                                        <p><strong>Resultados:</strong> O sistema contribuiu para Desenvolvimento pessoal de aprendizagem </p>
+                                        <a href="#" class="btn-trabalho">📘 Ver Detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>Feito por Eduardo Felipe</p>
+            </footer>
+
+            <script>
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+            </script>
