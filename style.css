@@ -18,7 +18,7 @@ body{
     text-align: center;
     background: linear-gradient(135deg, #1a0000, #400000, #1a0000);
     background-size: 200% 200%;
-    animation: gradientMove 6s ease infinite;
+    animation: gradientMove 4s ease infinite;
 }
 .hero h1{
     font-size: 3rem;
@@ -166,7 +166,7 @@ body{
     content: "▸ ";
     color: #ff3b3b;
 }
-/* ======== SEÇÃO PROJETOS (REESTILIZADA) ======== */
+
 .projetos {
   padding: 90px 20px;
   background-color: #0e0e0e;
@@ -188,7 +188,7 @@ body{
   letter-spacing: 1px;
 }
 
-/* Layout com cards menores e lado a lado */
+
 .grid-projetos {
   display: flex;
   flex-wrap: wrap;
@@ -197,9 +197,9 @@ body{
 }
 
 .projeto-card {
-  background: #1a1a1a; /* preto mais puro pra contraste */
+  background: #1a1a1a; 
   color: #eaeaea;
-  width: 320px; /* tamanho menor e padronizado */
+  width: 320px; 
   padding: 20px;
   border-radius: 10px;
   border-left: 3px solid #ff3b3b;
@@ -209,7 +209,7 @@ body{
 
 .projeto-card:hover {
   transform: translateY(-6px);
-  background: #222; /* leve variação ao passar o mouse */
+  background: #222; 
 }
 
 .projeto-card h3 {
@@ -323,4 +323,94 @@ body{
 .btn-trabalho:hover {
   background-color: #ff5c5c;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+.certificados {
+  background-color: #0a0a0a;
+  padding: 80px 0;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.certificados h2 {
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  color: #e50914;
+}
+
+.carrossel {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  animation: deslizar 16s linear infinite;
+}
+
+.slide {
+  flex: 0 0 300px;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.05);
+}
+
+.slide p {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.contato {
+  background-color: #0a0a0a;
+  padding: 80px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.contato h2 {
+  font-size: 2.2em;
+  color: #e50914;
+  margin-bottom: 20px;
+}
+
+.contato p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.contato-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contato-links a {
+  background-color: #e50914;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contato-links a:hover {
+  background-color: #ff1f1f;
+  transform: scale(1.05);
 }
