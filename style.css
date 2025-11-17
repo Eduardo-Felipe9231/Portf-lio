@@ -20,6 +20,7 @@ body{
     background-size: 200% 200%;
     animation: gradientMove 4s ease infinite;
 }
+
 .hero h1{
     font-size: 3rem;
     font-weight: 700;
@@ -413,4 +414,36 @@ body{
 .contato-links a:hover {
   background-color: #ff1f1f;
   transform: scale(1.05);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0b0b0b;
+    padding: 15px 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ff4b4b;
+}
+
+.hero {
+    padding-top: 100px;
 }
